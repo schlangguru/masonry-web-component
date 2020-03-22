@@ -91,7 +91,7 @@ export class ScMasonry extends ScHTMLElement {
   }
 
   get isColumnWidthFixed() {
-    return this.hasAttribute('fixed-column-width');
+    return this.hasAttribute('column-width');
   }
 
   get columnWidthCss() {
