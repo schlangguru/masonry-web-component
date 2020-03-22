@@ -4,6 +4,7 @@ import './ScMasonryImg.js';
 
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
+import SimpleLightbox from './lightbox/SimpleLightbox.js'
 import { ScMasonryImg } from './ScMasonryImg.js';
 
 export class ScMasonry extends ScHTMLElement {
@@ -28,12 +29,18 @@ export class ScMasonry extends ScHTMLElement {
         <div id="grid-sizer"></div>
         ${ this.imagesTemplate()}
       </div>
+
+      <div id="lightbox"></div>
     `;
   }
 
   imagesTemplate() {
     return this.images.map(element =>
-      html`<img class="grid-item" src=${element.src}>`
+      html`
+        <a href="${ element.src }" title="Caption for gallery item 1">
+          <img class="grid-item" src=${ element.src }>
+        </a>
+      `
     );
   }
 
@@ -50,6 +57,11 @@ export class ScMasonry extends ScHTMLElement {
         columnWidth: '#grid-sizer',
         percentPosition: false,
         gutter: this.gutter
+      });
+
+      new SimpleLightbox({
+        elements: this.shadowRoot.querySelectorAll('#grid a'),
+        appendTarget: this.shadowRoot.getElementById('lightbox')
       });
     });
   }
