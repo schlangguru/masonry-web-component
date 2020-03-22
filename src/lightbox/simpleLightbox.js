@@ -362,8 +362,12 @@
         show: function() {
 
             if (!this.modalInDom) {
-
-                document.querySelector(this.options.appendTarget).appendChild(this.$el);
+                
+                if (typeof this.options.appendTarget  === 'string') {
+                    document.querySelector(this.options.appendTarget).appendChild(this.$el);
+                } else {
+                    this.options.appendTarget.appendChild(this.$el);
+                }
                 addClass(document.documentElement, this.options.htmlClass);
                 this.setupLightboxEvents();
                 this.modalInDom = true;

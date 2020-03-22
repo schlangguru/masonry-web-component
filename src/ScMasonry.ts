@@ -5,6 +5,7 @@ import './ScMasonryImg.js';
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
 import SimpleLightbox from './lightbox/SimpleLightbox.js'
+import { lightboxCSS } from './lightbox/SimpleLightbox.css.js'
 import { ScMasonryImg } from './ScMasonryImg.js';
 
 export class ScMasonry extends ScHTMLElement {
@@ -25,6 +26,9 @@ export class ScMasonry extends ScHTMLElement {
           height: auto;
         }
       </style>
+
+      ${ lightboxCSS() }
+
       <div id="grid">
         <div id="grid-sizer"></div>
         ${ this.imagesTemplate()}
