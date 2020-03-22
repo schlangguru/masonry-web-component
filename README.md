@@ -53,3 +53,7 @@ Use either `columns` or `column-width` attribute.
 # start demo server
 `npm run serve`
 ```
+
+# Attribution
+- Masonry Layout: [desandro/masonry](https://github.com/desandro/masonry)
+- Lightbox based on: [dbrekalo/simpleLightbox](https://github.com/dbrekalo/simpleLightbox)
