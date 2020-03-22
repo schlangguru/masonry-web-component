@@ -1,6 +1,5 @@
 import { ScHTMLElement } from './ScHTMLElement'
 import { html } from 'lit-html';
-import { ifDefined } from 'lit-html/directives/if-defined';
 import './ScMasonryImg';
 
 import Masonry from 'masonry-layout';
@@ -40,10 +39,10 @@ export class ScMasonry extends ScHTMLElement {
 
   imagesTemplate() {
     return this.images.map(element => {
-      const img = html`<img class="grid-item" src=${ element.src } alt="${ ifDefined(element.caption) }">`;
+      const img = html`<img class="grid-item" src=${ element.src } alt="${ element.caption || '' }">`;
       if (this.isLightboxEnabled) {
         return html`
-          <a href="${ element.src }" title="${ ifDefined(element.caption) }">
+          <a href="${ element.src }" title="${ element.caption || '' }">
             ${ img }
           </a>
         `
