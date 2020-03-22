@@ -1,5 +1,6 @@
 import { ScHTMLElement } from './ScHTMLElement'
 import { html } from 'lit-html';
+import { ifDefined } from 'lit-html/directives/if-defined';
 import './ScMasonryImg';
 
 import Masonry from 'masonry-layout';
@@ -26,7 +27,7 @@ export class ScMasonry extends ScHTMLElement {
         }
       </style>
 
-      ${ simpleLightBoxStyle }
+      ${ this.isLightboxEnabled ? simpleLightBoxStyle : '' }
 
       <div id="grid">
         <div id="grid-sizer"></div>
@@ -38,13 +39,18 @@ export class ScMasonry extends ScHTMLElement {
   }
 
   imagesTemplate() {
-    return this.images.map(element =>
-      html`
-        <a href="${ element.src }" title="Caption for gallery item 1">
-          <img class="grid-item" src=${ element.src }>
-        </a>
-      `
-    );
+    return this.images.map(element => {
+      const img = html`<img class="grid-item" src=${ element.src } alt="${ ifDefined(element.caption) }">`;
+      if (this.isLightboxEnabled) {
+        return html`
+          <a href="${ element.src }" title="${ ifDefined(element.caption) }">
+            ${ img }
+          </a>
+        `
+      } else {
+        return img;
+      }
+    });
   }
 
   render() {
@@ -62,10 +68,12 @@ export class ScMasonry extends ScHTMLElement {
         gutter: this.gutter
       });
 
-      new SimpleLightbox({
-        elements: this.shadowRoot.querySelectorAll('#grid a'),
-        appendTarget: this.shadowRoot.getElementById('lightbox')
-      });
+      if (this.isLightboxEnabled) {
+        new SimpleLightbox({
+          elements: this.shadowRoot.querySelectorAll('#grid a'),
+          appendTarget: this.shadowRoot.getElementById('lightbox')
+        });
+      }
     });
   }
 
@@ -92,6 +100,10 @@ export class ScMasonry extends ScHTMLElement {
     } else {
       return `calc(${ 100 / this.columns }% - ${ this.gutter - (this.gutter / this.columns) }px)`;
     }
+  }
+
+  get isLightboxEnabled() {
+    return this.hasAttribute('lightbox');
   }
 
 }
