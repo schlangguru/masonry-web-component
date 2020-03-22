@@ -1,12 +1,11 @@
 import { ScHTMLElement } from './ScHTMLElement'
 import { html } from 'lit-html';
-import './ScMasonryImg.js';
+import './ScMasonryImg';
 
 import Masonry from 'masonry-layout';
 import imagesLoaded from 'imagesloaded';
-import SimpleLightbox from './lightbox/SimpleLightbox.js'
-import { lightboxCSS } from './lightbox/SimpleLightbox.css.js'
-import { ScMasonryImg } from './ScMasonryImg.js';
+import { SimpleLightbox, simpleLightBoxStyle } from './lightbox/SimpleLightbox.js'
+import { ScMasonryImg } from './ScMasonryImg';
 
 export class ScMasonry extends ScHTMLElement {
 
@@ -27,7 +26,7 @@ export class ScMasonry extends ScHTMLElement {
         }
       </style>
 
-      ${ lightboxCSS() }
+      ${ simpleLightBoxStyle }
 
       <div id="grid">
         <div id="grid-sizer"></div>
