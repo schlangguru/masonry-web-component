@@ -1,84 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>sc-masonry demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>sc-masonry demo</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script type="module" src="./ScMasonry.js"></script>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./ScMasonry.js"></script>
 </head>
-<body>
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1>Masonry Gallery</h1>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 text-center">
-                <div class="card" style="border: 1px solid black;">
-                    <sc-masonry lightbox columns="4" gutter="5">
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80" caption="My Image 1"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80" caption="My Image 2"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                    </sc-masonry>
-                </div>
-            </div>
 
-            <div class="col-6 text-center">
-                <div class="card" style="border: 1px solid black;">
-                    <sc-masonry column-width="150" gutter="5">
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584398909348-8302fc545a4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584393588988-77e1ccdc8b8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1581093691829-83572c1a4dec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584437893329-30e96b3cc324?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></sc-masonry-img>
-                        <sc-masonry-img src="https://images.unsplash.com/photo-1584402563914-a801ed0fbecd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"></sc-masonry-img>
-                    </sc-masonry>
-                </div>
-            </div>
-        </div>
+<body>
+  <div class="container">
+    <div id="grid-1" class="card">
+      <h1>Variable img width</h1>
+      
+      <sc-masonry lightbox columns="4" gutter="5">
+        <sc-masonry-img src="https://via.placeholder.com/150x150" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x180" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/180x130" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x250" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/170x160" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x170" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x150" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x180" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/180x130" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x250" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/170x160" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x170" caption="Example Image"></sc-masonry-img>
+      </sc-masonry>
     </div>
+    
+    <div id="grid-2" class="card">
+      <h1>Variable number of columns</h1>
+ 
+      <sc-masonry lightbox column-width="150" gutter="5">
+        <sc-masonry-img src="https://via.placeholder.com/150x150" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x180" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/180x130" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x250" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/170x160" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x170" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x150" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x180" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/180x130" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x250" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/170x160" caption="Example Image"></sc-masonry-img>
+        <sc-masonry-img src="https://via.placeholder.com/150x170" caption="Example Image"></sc-masonry-img>
+      </sc-masonry>
+    </div>
+  </div>
 </body>
+
 </html>

@@ -1,0 +1,21 @@
+#grid-1 {
+  grid-area: grid-1;
+}
+
+#grid-2 {
+  grid-area: grid-2;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "grid-1 grid-2";
+  grid-gap: 25px;
+}
+
+.card {
+  text-align: center;
+  background-color: #eceff1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
