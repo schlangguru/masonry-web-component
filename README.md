@@ -45,13 +45,13 @@ Use either `columns` or `column-width` attribute.
 ## Development
 ```bash
 # install all dependencies
-`npm install` 
+npm install
 # build web component
-`npm run build`
+npm run build
 # watch for file changes -> run build on change
-`npm run watch`
+npm run watch
 # start demo server
-`npm run serve`
+npm run serve
 ```
 
 # Attribution
