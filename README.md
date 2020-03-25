@@ -1,6 +1,8 @@
 # SC Masonry
 SC Masonry is a web component to easily build a masonry photo gallery.
 
+![Banner](./banner.png)
+
 ## Features
 - Responsive
 - Choose between
