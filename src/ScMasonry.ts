@@ -39,15 +39,14 @@ export class ScMasonry extends ScHTMLElement {
 
   imagesTemplate() {
     return this.images.map(element => {
-      const img = html`<img class="grid-item" src=${ element.src } alt="${ element.caption || '' }">`;
       if (this.isLightboxEnabled) {
         return html`
           <a href="${ element.src }" title="${ element.caption || '' }">
-            ${ img }
+            <img class="grid-item" src=${ element.thumbnail } alt="${ element.caption || '' }">
           </a>
         `
       } else {
-        return img;
+        return html`<img class="grid-item" src=${ element.src } alt="${ element.caption || '' }">`;
       }
     });
   }

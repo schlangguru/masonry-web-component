@@ -6,6 +6,10 @@ export class ScMasonryImg extends ScHTMLElement {
     return this.getAttribute('src');
   }
 
+  get thumbnail() {
+    return this.getAttribute('thumbnail') || this.src;
+  }
+
   get caption() {
     return this.getAttribute('caption');
   }
