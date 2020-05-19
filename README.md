@@ -7,7 +7,7 @@ SC Masonry is a web component to easily build a masonry photo gallery.
 - Responsive
 - Choose between
   - fixed number of columns with variable image width
-  - variable number of columsn width fixed image width
+  - variable number of columns with fixed image width
 - Lightbox support
 
 ## Usage
